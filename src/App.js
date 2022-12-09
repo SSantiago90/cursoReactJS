@@ -1,4 +1,3 @@
-import './App.css';
 import NavBAR from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -11,21 +10,9 @@ function App() {
     <BrowserRouter>
         <NavBAR/>
         <Routes>
-            <Route path='/' element={
-              <div className="contenido">
-                <ItemListContainer/>
-              </div>} 
-            />
-            <Route path="/categoria/:categoria" element={
-              <div className="contenido">
-                <ItemListContainer/>
-              </div>} 
-            />
-            <Route path="/Item/:IDproducto" element={
-              <div className="contenido">
-                <ItemDetailContainer/>
-              </div>} 
-            />
+            <Route path='/' element={<ItemListContainer/>} />
+            <Route path="/categoria/:categoria" element={<ItemListContainer/>}/>
+            <Route path="/Item/:IDproducto" element={<ItemDetailContainer/>} />
             <Route path='*' element={<h1>Error! No se pudo hallar el elemento</h1>}/>
         </Routes>
         

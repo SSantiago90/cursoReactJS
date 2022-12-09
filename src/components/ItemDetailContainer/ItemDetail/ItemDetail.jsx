@@ -1,5 +1,5 @@
 import "./itemDetail.css"
-import { Button } from "react-bootstrap";
+import ButtonCount from "../../ButtonCount/ButtonCount";
 
 function  ItemDetail(props) {
   let altText = `imagen  + ${props.titulo}`;
@@ -8,9 +8,9 @@ function  ItemDetail(props) {
         <h1>{props.titulo}</h1>
         <img className="imgDetail" src={props.img}  alt ={altText} srcSet="" />
         <p>{props.descripcion}</p>
-        <div>
+        <div className="divItemCount">
           <p>$ {props.precio}</p>  
-          <Button variant="secondary"> test</Button>
+          <ButtonCount stock = {props.stock}/>
         </div>
         
     </>

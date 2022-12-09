@@ -19,7 +19,7 @@ const productos =[
         descripcion: "Ceveza rubia de trigo en presentación de lata 473 cm3. Graduación alcohólica: 5.1%." ,
         categoria: "cerveza",
         precio: 200,
-        stock: 5
+        stock: 6
     },
     {
         key: 3,
@@ -41,7 +41,7 @@ const productos =[
         descripcion: "Papas fritas Lays corte americano en paquete de 38 grs",
         categoria: "snack",
         precio: 150,
-        stock: 6
+        stock: 7
     },
     {
         key: 5,
@@ -150,7 +150,7 @@ const productos =[
         descripcion: "Patatas fritas con condimento preparado de vegetales y especias. Paquete de 85 grs",
         categoria: "snack",
         precio:267,
-        stock: 10
+        stock: 8
     },
     {
         key: 15,
@@ -161,7 +161,7 @@ const productos =[
         descripcion: "Patatas fritas con sabor a salsa vinagreta. Paquete de 85 grs",
         categoria: "snack",
         precio:267,
-        stock: 10
+        stock: 11
     },
     {
         key: 16,
@@ -183,7 +183,7 @@ const productos =[
         descripcion: "Patatas con sabor original. Paquete de 140 grs",
         categoria: "snack",
         precio:485,
-        stock: 10
+        stock: 13
     },
     {
         key: 18,
