@@ -1,5 +1,6 @@
 import "./navBar.css"
 import CartWidget from "../CartWidget/Cartwidget";
+import { Link } from "react-router-dom";
 
 function  NavBAR() {
     return (
@@ -7,16 +8,18 @@ function  NavBAR() {
       <nav className="navBar">
         <ul>
           <li>
-            <img src="https://res.cloudinary.com/dtvv5h3mm/image/upload/v1668975701/cursoReactJS/iconBeer_ntnsxk.svg" alt= "logo" />
+            <Link to={"/"}>
+              <img src="https://res.cloudinary.com/dtvv5h3mm/image/upload/v1668975701/cursoReactJS/iconBeer_ntnsxk.svg" alt= "logo" />
+            </Link>          
           </li>
           <li>
-            <a href="#">Productos 1</a>
+            <Link to={"/categoria/cerveza"}>Cervezas</Link>
           </li>
           <li>
-            <a href="#">Productos 2</a>
+            <Link to={"/categoria/snack"}>Snacks</Link>
           </li>
           <li>
-            <a href="#">Productos 3</a>
+            <Link to={"/"}>Productos 3</Link>
           </li>
           
            
