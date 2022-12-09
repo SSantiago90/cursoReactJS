@@ -8,27 +8,29 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom';
 function App() {
   return (
    <>
-   <BrowserRouter>
-      <NavBAR/>
-      <Routes>
-          <Route path='/' element={
-            <div className="contenido">
-              <ItemListContainer/>
-            </div>} 
-          />
-          <Route path="/categoria/:categoria" element={
-            <div className="contenido">
-              <ItemListContainer/>
-            </div>} 
-          />
-          <Route path="/Item/:IDproducto" element={<ItemDetailContainer/>} 
-          />
-          <Route path='*' element={<h1>Error! No se pudo hallar el elemento</h1>}/>
-      </Routes>
-      
-      <Footer/>
-   </BrowserRouter>
-      
+    <BrowserRouter>
+        <NavBAR/>
+        <Routes>
+            <Route path='/' element={
+              <div className="contenido">
+                <ItemListContainer/>
+              </div>} 
+            />
+            <Route path="/categoria/:categoria" element={
+              <div className="contenido">
+                <ItemListContainer/>
+              </div>} 
+            />
+            <Route path="/Item/:IDproducto" element={
+              <div className="contenido">
+                <ItemDetailContainer/>
+              </div>} 
+            />
+            <Route path='*' element={<h1>Error! No se pudo hallar el elemento</h1>}/>
+        </Routes>
+        
+        <Footer/> 
+    </BrowserRouter>
    </>
   );
 }

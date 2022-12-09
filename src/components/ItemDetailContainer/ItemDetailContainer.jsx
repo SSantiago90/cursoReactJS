@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getItemByID } from "../../services/mockService";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail/ItemDetail";
+import "./itemDetailContainer.css"
 
 function  ItemDetailContainer() {
     const [product, setProduct] = useState([]);
@@ -16,13 +17,16 @@ function  ItemDetailContainer() {
       }, [itemID]); 
     return (
     <>
-        <ItemDetail 
-                titulo = {product.titulo}
-                img = {product.img}
-                descripcion = {product.descripcion}
-                precio = {product.precio}
-                stock = {product.stock}
-        />
+    <div className="itemDetail">
+      <ItemDetail 
+                  titulo = {product.titulo}
+                  img = {product.img}
+                  descripcion = {product.descripcion}
+                  precio = {product.precio}
+                  stock = {product.stock}
+          />
+    </div>
+        
     </>
     );
   }
