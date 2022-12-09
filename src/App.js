@@ -23,8 +23,6 @@ function App() {
           />
           <Route path="/Item/:IDproducto" element={<ItemDetailContainer/>} 
           />
-          
-
           <Route path='*' element={<h1>Error! No se pudo hallar el elemento</h1>}/>
       </Routes>
       
