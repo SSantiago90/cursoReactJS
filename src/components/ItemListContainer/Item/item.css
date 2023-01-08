@@ -14,9 +14,15 @@ a:link, a:visited, a:active {
 }
 .item:hover {
   border: 1px solid lightgray;
+  color: black;
 }
 
 .imgItem {
   height: 200px;
   width: min-content;
+}
+
+.precio {
+  font-weight: 600;
+  margin-top: 10px;
 }/*# sourceMappingURL=item.css.map */

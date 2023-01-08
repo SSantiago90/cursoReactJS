@@ -207,6 +207,61 @@ const productos =[
         precio:157,
         stock: 13
     },
+    {
+        key: 20,
+        IDproducto: 20,
+        titulo: "Cabernet Fran Golden Reserve Trivento",
+        marca: "Trivento",
+        img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672870953/cursoReactJS/vinos/00540267_k2e8n6.jpg",
+        descripcion: "Vino tinto. Crianza: 16 meses 40% en barricas de roble francés y 60% en foudres. 12 meses en botella. Graduación Alcohólica: 14,5%",
+        categoria: "vino",
+        precio:2200,
+        stock: 12
+    },
+    {
+        key: 21,
+        IDproducto: 21,
+        titulo: "Escorihuela Gascón Malbec Con Estuche",
+        marca: "Escorihuela Gascón",
+        img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672871168/cursoReactJS/vinos/00233179_mx7czz.jpg",
+        descripcion: "Vino tinto. Crianza:  60% del corte pasa 8 meses en contacto con roble francés. Graduación Alcohólica: 13,8%",
+        categoria: "vino",
+        precio:2500,
+        stock: 12
+    },
+    {
+        key: 22,
+        IDproducto: 22,
+        titulo: "Chardon Chardonnay-Cha Dv Catena",
+        marca: "Dv Catena",
+        img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672871605/cursoReactJS/vinos/00219960_pdrpzk.jpg",
+        descripcion: "Vino blanco. Crianza: sobre borras durante 6 meses en barriles de roble francés de 3 usos y en tanque de acero inoxidable, con removido de borras una vez por semana. Graduación Alcohólica: 13,4%",
+        categoria: "vino",
+        precio:2350,
+        stock: 12
+    },
+    {
+        key: 23,
+        IDproducto: 23,
+        titulo: "Malbec Rosé Brazos De Los Andes",
+        marca: " Brazos De Los Andes",
+        img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672872016/cursoReactJS/vinos/D_NQ_NP_2X_911577-MLA51293409288_082022-F_s04705.webp",
+        descripcion: "Vino rosado. Crianza: Sin paso por madera. Cosecha manual. Delicada y corta maceración pelicular en frío. Prensado y fermentación sin pieles a 16-18° C. Graduación Alcohólica: 13%",
+        categoria: "vino",
+        precio:2550,
+        stock: 12
+    },
+    {
+        key: 24,
+        IDproducto: 24,
+        titulo: "Cabernet Sauvignon ALAMBRADO",
+        marca: " ALAMBRADO",
+        img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672872045/cursoReactJS/vinos/00241468_pzot9e.jpg",
+        descripcion: "Vino tinto. Crianza:  Vinificación clásica en tinto, con siembra de levaduras seleccionadas, fermentación entre 25-27º C y una maceración de 15 días sobre los orujos, con pigeage y delestage períodicos. Fermentación maloláctica en tanque. Crianza en barricas de roble francés de primer, segundo y tercer uso por 10 meses.. Graduación Alcohólica: 13%",
+        categoria: "vino",
+        precio:1350,
+        stock: 12
+    },
 
 ]
 

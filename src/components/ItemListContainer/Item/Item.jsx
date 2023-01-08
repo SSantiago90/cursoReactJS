@@ -9,7 +9,7 @@ function  Item(props) {
             <div className="item">
                 <h5>{props.titulo}</h5>
                 <img className="imgItem" src={props.img} alt ={altText} srcSet="" />
-                <p>$ {props.precio}</p>
+                <p className="precio">$ {props.precio}</p>
             </div>
         </Link>
         

@@ -1,6 +1,8 @@
 .imgDetail {
   width: min-content;
   height: 420px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .divItemCount {

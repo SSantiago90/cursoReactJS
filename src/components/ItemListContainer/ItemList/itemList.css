@@ -1,4 +1,6 @@
 .itemList {
+  min-height: 90vh;
+  max-height: max-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

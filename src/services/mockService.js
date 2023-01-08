@@ -33,4 +33,18 @@ export function getItemByID(itemID) {
   });
 }
 
+export function getItemsByCategoryMarca(categoria,marca) {
+  return new Promise((resolve, reject) => {
+    let itemsFound = productos.filter((item) => {
+      return (item.categoria === categoria && item.marca === marca);
+    });
+
+    if (itemsFound.length > 0 )
+      resolve(itemsFound);
+    else 
+    reject("No hay productos para esta categoría.")
+  });
+}
+
+
 export default getItems;

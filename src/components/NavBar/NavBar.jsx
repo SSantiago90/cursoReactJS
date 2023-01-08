@@ -19,13 +19,10 @@ function  NavBAR() {
             <Link to={"/categoria/snack"}>Snacks</Link>
           </li>
           <li>
-            <Link to={"/"}>Productos 3</Link>
+            <Link to={"/categoria/vino"}>Vinos</Link>
           </li>
-          
-           
-          
         </ul>
-        <CartWidget cantidad={3}/>
+        <CartWidget/>
       </nav>  
     </>
     );
