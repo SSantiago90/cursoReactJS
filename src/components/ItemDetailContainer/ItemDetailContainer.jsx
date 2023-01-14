@@ -8,7 +8,7 @@ import { cartContext } from "../../storage/cartContext";
 
 function  ItemDetailContainer() {
     const [product, setProduct] = useState([]);
-    // const [cantidad, setCantidad] = useState(1);
+    const [Loading, setLoading] = useState(true);
     const itemID = useParams().IDproducto;
     const {addToCart} = useContext(cartContext);
 
@@ -17,6 +17,7 @@ useEffect(() => {
     getItemByID(itemID)
       .then((respuesta) => {
           setProduct(respuesta);
+          setLoading(false);
     })
     .catch((error) => alert("Item no encontrado"));
     }, [itemID]); 
@@ -27,10 +28,15 @@ useEffect(() => {
     
     return (
     <>
-    <div className="itemDetail">
-      <ItemDetail producto ={product}/>
-      <ButtonCount stock = {product.stock} finishCount={handleAddToCart}/>   
-    </div>
+    
+      {
+        Loading ? <h2>Loading...</h2> :
+        <div className="itemDetail">
+          <ItemDetail producto ={product}/>
+          <ButtonCount stock = {product.stock} finishCount={handleAddToCart}/>   
+        </div>
+      }
+      
         
     </>
     );

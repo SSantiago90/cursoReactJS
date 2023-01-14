@@ -4,7 +4,7 @@ function getItems() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(productos);
-    }, 500);
+    }, 2500);
   });
 }
 
@@ -29,7 +29,7 @@ export function getItemByID(itemID) {
       );
       if (itemFound) resolve(itemFound);
       else reject("Item no encontrado");
-    }, 500);
+    }, 1500);
   });
 }
 

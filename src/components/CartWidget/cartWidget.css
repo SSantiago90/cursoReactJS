@@ -1,6 +1,8 @@
 .carrito {
   background-color: rgb(232, 206, 133);
-  border-radius: 50%;
+  width: auto;
+  height: 60px;
+  border-radius: 10%;
   padding: 0px 10px 0px;
   display: flex;
   flex-direction: row;
@@ -17,6 +19,6 @@
 }
 
 .icono {
-  width: 30px;
-  height: auto;
+  width: auto;
+  height: 30px;
 }/*# sourceMappingURL=cartWidget.css.map */

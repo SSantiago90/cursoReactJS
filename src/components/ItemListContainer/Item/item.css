@@ -10,6 +10,7 @@ a:link, a:visited, a:active {
   height: 350px;
   width: 250px;
   align-items: center;
+  justify-content: space-around;
   transition: all 0.5s ease-in-out;
 }
 .item:hover {
@@ -18,11 +19,21 @@ a:link, a:visited, a:active {
 }
 
 .imgItem {
-  height: 200px;
+  height: 220px;
   width: min-content;
 }
 
 .precio {
   font-weight: 600;
   margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .item {
+    height: 250px;
+    width: 180px;
+  }
+  .imgItem {
+    height: 120px;
+  }
 }/*# sourceMappingURL=item.css.map */
