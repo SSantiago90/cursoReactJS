@@ -9,11 +9,8 @@ function  ItemList(props) {
         <div className="itemList">
           {props.productos.map( item =>{
               return <Item
+                        producto = {item}
                         key = {item.key}
-                        id = {item.IDproducto}
-                        titulo =  {item.titulo}
-                        img = {item.img}
-                        precio = {item.precio}
                       />          
           })}           
         </div>

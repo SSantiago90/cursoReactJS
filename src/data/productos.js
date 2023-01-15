@@ -8,7 +8,8 @@ const productos =[
         descripcion: "Ceveza rubia en presentación de botella de 710 cm3. Graduación alcohólica: 4.5%.",
         categoria: "cerveza",
         precio: 500,
-        stock: 10
+        stock: 10,
+        discount: 0.2
     },
     {
         key: 2,
@@ -51,7 +52,8 @@ const productos =[
         descripcion: "Palitos salados Krachitos sabor queso en paquete de 60 grs",
         categoria: "snack",
         precio: 120,
-        stock: 5
+        stock: 5,
+        discount: 0.35
     },
     {
         key: 6,
@@ -62,7 +64,8 @@ const productos =[
         descripcion: "Pack por 6. Ceveza IPA en presentación de lata de 410 cm3. Graduación alcohólica: 4.5%.",
         categoria: "cerveza",
         precio: 2500,
-        stock: 10
+        stock: 10,
+        discount: 0.15
     },
     {
         key: 7,

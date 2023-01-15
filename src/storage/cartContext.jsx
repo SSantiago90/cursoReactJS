@@ -31,8 +31,23 @@ function CartContextProvider(props){
             }
         }
         setMiCarrito(newCart);
-        console.log(miCarrito);
-      
+    }
+
+    function totalTicket(){
+        let total = 0;
+        miCarrito.forEach(item => {
+            total += item.discount ? item.precio*item.count - item.precio*item.count*item.discount : item.precio*item.count; 
+        })
+        return total;
+    }
+
+    function clearCart(){
+        setMiCarrito([]);
+    }
+
+    function removeItemInCart(itemID){
+        const newCart = miCarrito.filter(item => item.productoID !== itemID)
+        setMiCarrito(newCart);
     }
 
     return(
@@ -40,6 +55,9 @@ function CartContextProvider(props){
                         cart : miCarrito,
                         totalItems :totalItemsInCart,
                         addToCart:addToCart,
+                        totalTicket,
+                        removeItemInCart,
+                        clearCart
                         }}>
             {props.children}
         </Provider>

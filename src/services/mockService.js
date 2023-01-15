@@ -4,21 +4,20 @@ function getItems() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(productos);
-    }, 2500);
+    }, 1000);
   });
 }
 
 export function getItemsByCategory(categoria) {
   return new Promise((resolve, reject) => {
-    let itemsFound = productos.filter((item) => {
-      return item.categoria === categoria;
+      let itemsFound = productos.filter((item) => {
+        return item.categoria === categoria;
+      });
+      if (itemsFound.length > 0 )
+        resolve(itemsFound);
+      else 
+      reject("No hay productos para esta categoría.")
     });
-
-    if (itemsFound.length > 0 )
-      resolve(itemsFound);
-    else 
-    reject("No hay productos para esta categoría.")
-  });
 }
 
 export function getItemByID(itemID) {
@@ -29,7 +28,7 @@ export function getItemByID(itemID) {
       );
       if (itemFound) resolve(itemFound);
       else reject("Item no encontrado");
-    }, 1500);
+    }, 1000);
   });
 }
 

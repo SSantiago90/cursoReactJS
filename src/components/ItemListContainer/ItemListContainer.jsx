@@ -1,34 +1,37 @@
 import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList/ItemList";
-import getItems, {getItemsByCategory,getItemsByCategoryMarca} from "../../services/mockService";
+import getItems, {getItemsByCategory} from "../../services/mockService";
 import { useParams } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 function ItemListContainer() {
   const [products, setProducts] = useState([]);
+  const [Loading, setLoading] = useState(true);
   const categoria = useParams().categoria;
-  const marca = useParams().marca;
 
   useEffect(() => {
     if (categoria === undefined) {
-      getItems().then((respuesta) => {
-        setProducts(respuesta);
-      });
+      getItems()
+        .then((respuesta) => {
+          setProducts(respuesta);
+          setLoading(false);
+        });
     }
     else {
-      if(marca === undefined){
-        getItemsByCategory(categoria).then((productosFiltrados) =>
+      getItemsByCategory(categoria)
+      .then((productosFiltrados) => {
         setProducts(productosFiltrados)
-      );
-      }
-      else{
-        getItemsByCategoryMarca(categoria,marca).then((productosFiltrados) =>
-        setProducts(productosFiltrados)
-      );
-      }
-
+        setLoading(false);
+      });
     }
-  }, [categoria,marca]);
+  }, [categoria]);
+
+  if(Loading) return <Loader/>;
+
   return <ItemList productos={products} />;
+
+  
+
 }
 
 export default ItemListContainer;

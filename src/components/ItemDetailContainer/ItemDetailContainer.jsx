@@ -5,6 +5,7 @@ import ItemDetail from "./ItemDetail/ItemDetail";
 import "./itemDetailContainer.css"
 import ButtonCount from "../Buttons/ButtonCount/ButtonCount";
 import { cartContext } from "../../storage/cartContext";
+import Loader from "../Loader/Loader";
 
 function  ItemDetailContainer() {
     const [product, setProduct] = useState([]);
@@ -28,16 +29,13 @@ useEffect(() => {
     
     return (
     <>
-    
       {
-        Loading ? <h2>Loading...</h2> :
+        Loading ? <Loader/> :
         <div className="itemDetail">
           <ItemDetail producto ={product}/>
           <ButtonCount stock = {product.stock} finishCount={handleAddToCart}/>   
         </div>
       }
-      
-        
     </>
     );
   }
