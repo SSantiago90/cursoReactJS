@@ -46,8 +46,9 @@ function CartContextProvider(props){
     }
 
     function removeItemInCart(itemID){
-        const newCart = miCarrito.filter(item => item.productoID !== itemID)
+        const newCart = miCarrito.filter(item => (item.IDproducto !== itemID))
         setMiCarrito(newCart);
+
     }
 
     return(

@@ -7,10 +7,10 @@ a:link, a:visited, a:active {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  height: 320px;
-  width: 240px;
+  height: 300px;
+  width: 220px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   transition: all 0.5s ease-in-out;
 }
 .item h5 {
@@ -22,7 +22,7 @@ a:link, a:visited, a:active {
 }
 
 .imgItem {
-  height: 200px;
+  height: 180px;
   width: min-content;
 }
 

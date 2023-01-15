@@ -7,13 +7,13 @@ import "./cart.css"
 
 function Cart(){
     const cart = useContext(cartContext).cart;
-    const remove = useContext(cartContext).removeItemInCart;
+    const {removeItemInCart} = useContext(cartContext);
+    const {totalItems} = useContext(cartContext);
 
     return(
     <>
       <div className="cart">
         <h1>Resumen de Compra</h1>
-
         <Table striped bordered  size="sm" className="align-middle text-center" >
           <thead>
             <tr>
@@ -35,7 +35,7 @@ function Cart(){
                 <td>{item.discount ? (item.precio - item.precio*item.discount)*item.count : item.precio*item.count}</td>
                 <td><MyButton 
                         color="btn btn-outline-danger"
-                        buttonTouch = {() => remove(item.productoID)}
+                        buttonTouch = {()=> removeItemInCart(item.IDproducto)}
                         text="X"
                 /></td>
             </tr>
@@ -50,8 +50,14 @@ function Cart(){
             </tr>
           </tbody>
         </Table>
-
+        { totalItems()>0 && 
+        <div>
+          <MyButton
+            text="Finalizar compra"
+          />
+        </div>}
       </div>
+
     </>
     );
 }
