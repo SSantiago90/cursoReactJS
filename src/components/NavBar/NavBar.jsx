@@ -1,25 +1,25 @@
 import "./navBar.css"
 import CartWidget from "../CartWidget/Cartwidget";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 function  NavBAR() {
     return (
     <>
       <nav className="navBar">
-      <Link to={"/"}>
+      <NavLink to={"/"}>
         <img className="icon" src="https://res.cloudinary.com/dtvv5h3mm/image/upload/v1668975701/cursoReactJS/iconBeer_ntnsxk.svg" alt= "logo" />
-      </Link> 
+      </NavLink> 
           
         <ul>
           <li>
-            <Link to={"/categoria/cerveza"}>Cervezas</Link>
+            <NavLink to={"/categoria/cerveza"}>Cervezas</NavLink>
           </li>
           <li>
-            <Link to={"/categoria/snack"}>Snacks</Link>
+            <NavLink to={"/categoria/snack"}>Snacks</NavLink>
           </li>
           <li>
-            <Link to={"/categoria/vino"}>Vinos</Link>
+            <NavLink to={"/categoria/vino"}>Vinos</NavLink>
           </li>
         </ul>
       

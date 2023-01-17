@@ -1,5 +1,5 @@
 import React, { useState, useEffect,useContext } from "react";
-import { getItemByID } from "../../services/mockService";
+import { getItemByID } from "../../services/firebaseService";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail/ItemDetail";
 import "./itemDetailContainer.css"
@@ -15,7 +15,7 @@ function  ItemDetailContainer() {
 
 
 useEffect(() => {
-    getItemByID(itemID)
+      getItemByID(itemID)
       .then((respuesta) => {
           setProduct(respuesta);
           setLoading(false);

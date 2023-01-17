@@ -1,7 +1,6 @@
 const productos =[
     {
         key: 1,
-        IDproducto: 1,
         titulo: "Cerveza Corona",
         marca: "Corona",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670505116/cursoReactJS/cervezas/Cerveza-Corona-710Cc-CERVEZA-CORONA-DESC-X710ML-1-571_knwrih.jpg",
@@ -13,7 +12,6 @@ const productos =[
     },
     {
         key: 2,
-        IDproducto: 2,
         titulo: "Cerveza st.Wendeler",
         marca: "st.Wendeler",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670505264/cursoReactJS/cervezas/Cerveza-Trigo-St--Wendeler-500-Ml-_1_buexa8.webp",
@@ -24,7 +22,6 @@ const productos =[
     },
     {
         key: 3,
-        IDproducto: 3,
         titulo: "Papas Lays Clasicas",
         marca: "Lays",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670505319/cursoReactJS/snacks/D_NQ_NP_769380-MLA44472124464_012021-O_y50l1x.jpg",
@@ -35,7 +32,6 @@ const productos =[
     },
     {
         key: 4,
-        IDproducto: 4,
         titulo: "Papas Lays Corte Americano",
         marca: "Lays",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670505370/cursoReactJS/snacks/front_es.12.400_izkysp.jpg",
@@ -46,7 +42,6 @@ const productos =[
     },
     {
         key: 5,
-        IDproducto: 5,
         titulo: "Palitos Krachitos",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670505397/cursoReactJS/snacks/D_NQ_NP_899327-MLA42141990019_062020-O_bvoniq.jpg",
         descripcion: "Palitos salados Krachitos sabor queso en paquete de 60 grs",
@@ -57,7 +52,6 @@ const productos =[
     },
     {
         key: 6,
-        IDproducto: 6,
         titulo: "Cerveza Patagonia",
         marca: "Patagonia",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670506149/cursoReactJS/cervezas/Cerveza-Patagonia-24-7-410cc-Sixpack-1-880091_diiiji.webp",
@@ -69,7 +63,6 @@ const productos =[
     },
     {
         key: 7,
-        IDproducto: 7,
         titulo: "Cerveza Patagonia",
         marca: "Patagonia",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670506299/cursoReactJS/cervezas/211133-800-auto_bdo447.webp",
@@ -80,7 +73,6 @@ const productos =[
     },
     {
         key: 8,
-        IDproducto: 8,
         titulo: "Cerveza Stella Artois",
         marca: "Stella Artois",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670506451/cursoReactJS/cervezas/211128-800-auto_z5qaxb.webp",
@@ -91,7 +83,6 @@ const productos =[
     },
     {
         key: 9,
-        IDproducto: 9,
         titulo: "Cerveza Stella Artois",
         marca: "Stella Artois",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670506670/cursoReactJS/cervezas/d2b1c5_62629d96d63a4ceaaf92481bb25ef628_mv2_ubjgaj.jpg",
@@ -102,7 +93,6 @@ const productos =[
     },
     {
         key: 10,
-        IDproducto: 10,
         titulo: "Cerveza Heineken",
         marca: "Heineken",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670506944/cursoReactJS/cervezas/Cerveza-Heineken-Premium-473-Ml---Pack-6-1-34458_fp7b0f.webp",
@@ -113,7 +103,6 @@ const productos =[
     },
     {
         key: 11,
-        IDproducto: 11,
         titulo: "Cerveza Heineken",
         marca: "Heineken",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670506945/cursoReactJS/cervezas/00047101_zxe5gj.jpg",
@@ -124,7 +113,6 @@ const productos =[
     },
     {
         key: 12,
-        IDproducto: 12,
         titulo: "Cerveza Imperial",
         marca: "Imperial",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670507336/cursoReactJS/cervezas/231324-800-auto_accfbg.png",
@@ -135,7 +123,6 @@ const productos =[
     },
     {
         key: 13,
-        IDproducto: 13,
         titulo: "Cerveza Imperial",
         marca: "Imperial",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670507501/cursoReactJS/cervezas/D_NQ_NP_704770-MLA51115765293_082022-O_qs1fqi.webp",
@@ -146,7 +133,6 @@ const productos =[
     },
     {
         key: 14,
-        IDproducto: 14,
         titulo: "Papas Lays CAMPESINAS",
         marca: "Lays",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670507943/cursoReactJS/snacks/layscampesinas_popup_header_image_243x389_mb1e7c.jpg",
@@ -157,7 +143,6 @@ const productos =[
     },
     {
         key: 15,
-        IDproducto: 15,
         titulo: "Papas Lays VINAGRETA",
         marca: "Lays",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670508202/cursoReactJS/snacks/layssalt-amp-vinegar_popup_header_image_243x389f780b1a381a669b494aaff03007b74c4_i95qe6.jpg",
@@ -168,7 +153,6 @@ const productos =[
     },
     {
         key: 16,
-        IDproducto: 16,
         titulo: "LAY'S STAX SOUR CREAM & ONION",
         marca: "Lays",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670508443/cursoReactJS/snacks/lays_packs_389x389px_231811b1a381a669b494aaff03007b74c4_nry1jx.png",
@@ -179,7 +163,6 @@ const productos =[
     },
     {
         key: 17,
-        IDproducto: 17,
         titulo: "LAY'S STAX ORIGIANL",
         marca: "Lays",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670508666/cursoReactJS/snacks/lays_packs_389x389px_22_cc4cz4.png",
@@ -190,7 +173,6 @@ const productos =[
     },
     {
         key: 18,
-        IDproducto: 18,
         titulo: "Papas Krachitos",
         marca: "Krachitos",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670508774/cursoReactJS/snacks/197136-800-auto_fhmqbi.webp",
@@ -201,7 +183,6 @@ const productos =[
     },
     {
         key: 19,
-        IDproducto: 19,
         titulo: "Maní Krachitos",
         marca: "Krachitos",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1670508923/cursoReactJS/snacks/178514-800-auto_n60wap.webp",
@@ -212,7 +193,6 @@ const productos =[
     },
     {
         key: 20,
-        IDproducto: 20,
         titulo: "Cabernet Fran Golden Reserve Trivento",
         marca: "Trivento",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672870953/cursoReactJS/vinos/00540267_k2e8n6.jpg",
@@ -223,7 +203,6 @@ const productos =[
     },
     {
         key: 21,
-        IDproducto: 21,
         titulo: "Escorihuela Gascón Malbec Con Estuche",
         marca: "Escorihuela Gascón",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672871168/cursoReactJS/vinos/00233179_mx7czz.jpg",
@@ -234,7 +213,6 @@ const productos =[
     },
     {
         key: 22,
-        IDproducto: 22,
         titulo: "Chardon Chardonnay-Cha Dv Catena",
         marca: "Dv Catena",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672871605/cursoReactJS/vinos/00219960_pdrpzk.jpg",
@@ -245,7 +223,6 @@ const productos =[
     },
     {
         key: 23,
-        IDproducto: 23,
         titulo: "Malbec Rosé Brazos De Los Andes",
         marca: " Brazos De Los Andes",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672872016/cursoReactJS/vinos/D_NQ_NP_2X_911577-MLA51293409288_082022-F_s04705.webp",
@@ -256,7 +233,6 @@ const productos =[
     },
     {
         key: 24,
-        IDproducto: 24,
         titulo: "Cabernet Sauvignon ALAMBRADO",
         marca: " ALAMBRADO",
         img: "https://res.cloudinary.com/dtvv5h3mm/image/upload/v1672872045/cursoReactJS/vinos/00241468_pzot9e.jpg",

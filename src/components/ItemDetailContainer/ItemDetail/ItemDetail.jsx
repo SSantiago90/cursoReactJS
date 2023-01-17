@@ -1,7 +1,5 @@
 import "./itemDetail.css"
 
-
-
 function  ItemDetail(props) {
 
   let altText = `imagen  + ${props.producto.titulo}`;
